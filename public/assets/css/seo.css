@@ -1,0 +1,15 @@
+.seo-arae { margin:20px 22px; }
+    .seo-title { margin-bottom:12px; font-size:20px; font-family: 'Roboto-bold'; color: #A1A2A9; }
+    .seo-content p { display:block; margin-bottom:12px; font-size:14px; line-height:1.3; color: #A1A2A9; }
+    .seo-content p strong { font-family: 'Roboto-bold';}
+
+@media (min-width:767px) {
+    .seo-arae { margin:33px 64px 48px; }
+}
+
+@media screen and (prefers-color-scheme: light) {    
+
+    .seo-title, .seo-content p { color:#696A76;} 
+
+    
+}

@@ -1,0 +1,31 @@
+/*rss*/
+.rss-content{padding: 0;text-align:left;color: #fff;}
+.rss-content h3{display:block;line-height: 25px;font-size:25px;margin-bottom:10px;color: #fff;}
+.rss-content p{margin-bottom:10px;}
+.rssListFrame{width:100%}
+
+.rssListFrame ul.list{width:100%;padding-left: 0;}
+.rssListFrame ul.list li{width:100%;display:block;-webkit-transition:.5s;transition:.5s;margin-bottom:0;}
+.rssListFrame ul.list li:hover{background-color:#414662;}
+.rssListFrame ul.list li a{width:100%;display:flex;color: #fff;}
+.rssListFrame ul.list li span{display:block;align-items:center;height:35px;line-height: 35px;font-size:12px;border-bottom:1px solid #f1f1f1;border-right:1px solid #f1f1f1;text-align:left;padding:0 10px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.rssListFrame ul.list li span:first-child{flex-shrink:0;width:110px;font-size:12px;}
+.rssListFrame ul.list li span:nth-child(2){width:100%;}
+.rssListFrame ul.list li span:last-child{flex-shrink:0;width:45px;background:url(../i/rss.png) no-repeat center center;text-align:center;border-right:none;padding:0;}
+.rssListFrame ul.list li span i{color:#ea7819}
+.rssListFrame ul.list li:hover  a{color: #fff !important;}
+
+@media (min-width:767px) {
+    .rssListFrame ul.list li span{height:48px;line-height: 48px;font-size:16px;}
+    .rssListFrame ul.list li span:first-child { width:200px; font-size:17px;}
+}
+
+@media screen and (prefers-color-scheme: light) {    
+
+    body.light-mode .rssListFrame ul.list li a { color:#15182a;}
+    body.light-mode .rssListFrame ul.list li span { border-color:#15182a ;}
+   
+
+    
+}
+

@@ -1,0 +1,9 @@
+﻿User-agent: *
+
+Disallow: /images
+Disallow: /static
+Disallow: /api
+Disallow: /manifest.json
+Disallow: /favicon.ico
+Disallow: /service-worker.js
+Sitemap: https://www.724izle.com/sitemap/news.xml

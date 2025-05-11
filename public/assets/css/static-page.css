@@ -1,0 +1,46 @@
+.static-page { }
+.static-page h1, .static-page h2, .static-page h3, .static-page h4, .static-page h5, .static-page h6 {font-family:'Roboto-bold'; font-weight:normal; color:var(--white-color); line-height:1.5; }
+.static-page h1 { font-size:32px;}
+.static-page h2 { font-size:24px; margin-bottom:12px;}
+.static-page h3, .static-page h4, .static-page h5, .static-page h6 { font-size:18px; margin-bottom:12px;}
+.static-page p { display:block; margin-bottom:30px; color:#acadb7; font-size:16px; line-height:23px;}
+.static-page p a { color:#fff;}
+.static-page p strong { font-family:Roboto-bold;}
+.purple-bg { background-color:rgba(65,69,99,.6);}
+
+.static-page-browsers { background-color: var(--primary-color); padding:24px; margin-bottom:20px; border-radius: 10px; }
+.static-page-browsers li { margin-bottom:20px; }
+.static-page-browsers li:last-child { margin-bottom:0; }
+.static-page-browsers span { display:block;}
+.static-page-browsers span, .static-page-browsers a { font-size:14px; line-height:21px; font-family:'Roboto-bold';}
+.static-page-browsers a { font-family:'Roboto-medium'; word-wrap: break-word; overflow:hidden; color:#fff;}
+
+.static-page-logo img:last-child { display:none;}
+
+@media (min-width:767px) {
+    .static-page { }
+    .static-page h1 { font-size:40px;}
+    .static-page-browsers li { display:flex; margin-bottom:32px; }
+    .static-page-browsers span, .static-page-browsers a { font-size:16px; }
+    .static-page-browsers span { flex-shrink: 0; width:150px; margin-right:40px;}
+}
+
+@media (min-width:1200px) {
+    .static-page { }
+}
+
+@media (min-width:1440px) {
+    
+}
+@media screen and (prefers-color-scheme: light) {    
+
+    body.light-mode .static-page h1, body.light-mode .static-page h2, body.light-mode .static-page h3, body.light-mode .static-page h4, body.light-mode .static-page h5, body.light-mode .static-page h6, body.light-mode .static-page p, body.light-mode .static-page p a, body.light-mode .static-page-browsers a { color:#15182a;}
+    body.light-mode .purple-bg { background-color:#E7E7E9;}
+    body.light-mode .static-page-logo img:first-child { display:none;}
+    body.light-mode .static-page-logo img:last-child { display:block;}
+
+    body.light-mode .static-page-browsers {background-color:#E7E7E9;  }
+   
+
+    
+}
