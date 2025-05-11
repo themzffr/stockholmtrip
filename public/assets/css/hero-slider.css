@@ -4,6 +4,10 @@
     position: relative;
 }
 
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
 .hero-slider .swiper {
     height: 100%;
 }
@@ -11,7 +15,7 @@
 .hero-slider .swiper-wrapper {}
 
 .hero-slider .swiper-slide {
-    padding: 60px 16px 0;
+    padding: 30px 16px 0;
 }
 
 .hero-slider .swiper-button-prev,
@@ -50,7 +54,16 @@
 .hero-slider .hero-slider-title,
 .main-title h1 {
     display: flex;
-    margin-top: 100px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+.main-title h2 {
+    display: flex;
     margin-bottom: 20px;
     line-height: 1.2;
     font-size: 32px;
@@ -169,7 +182,6 @@
     border-radius: 6px;
     font-size: 13px;
     color: #000;
-    font-family: Roboto-medium;
 }
 
 .hero-slider-buttons .play-button svg,
@@ -395,7 +407,6 @@
         position: absolute;
         left: 0;
         padding: 0 15px;
-        bottom: 0;
     }
     .hero-slider .hero-slider-image {
         position: relative;
@@ -426,6 +437,8 @@
 }
 
 .hero-slider .swiper-button-prev::after,
+.special-widget-prev::after,
+.special-widget-next::after,
 .hero-slider .swiper-button-next::after {
     display: none !important;
 }

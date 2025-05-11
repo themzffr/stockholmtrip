@@ -7,7 +7,7 @@ import NewCard from "./NewCard";
 
 
 
-const SpecialWidgetSlider = ({list, MediaType, ModuleType, Id}) => {
+const SpecialWidgetSlider = ({list, Id}) => {
 
 
 
@@ -50,13 +50,13 @@ const SpecialWidgetSlider = ({list, MediaType, ModuleType, Id}) => {
     <div className={"special-widget-slider"}>
       <div className={"swiper special-swiper_"+Id}>
         <div className="swiper-wrapper">
-        {list.map((item) => {
+        {list.map((item, index) => {
                     return (<SwiperSlide  
                       onPointerEnter={()=>{document.body.style.touchAction= 'none';}}
                       onPointerOut={()=>{document.body.style.touchAction= 'auto';}}
-                    key={item.Id } style={{maxWidth:240}}> 
+                    key={index} style={{maxWidth:240}}> 
              
-             <NewCard MediaType={MediaType} product={item}  ModuleType={ModuleType}/> 
+             <NewCard  product={item}  /> 
       
             
                     
